@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- ol태그 안의 li 4개 생성 
+        ol>li*4 -->
+    <ol>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ol>
+
+    <!-- ol태그 안의 li 4개 생성 후 content내용넣기 
+        ol>li*4{content} -->
+    <ol>
+        <li>content</li>
+        <li>content</li>
+        <li>content</li>
+        <li>content</li>
+    </ol>
+
+    <!-- ol태그 안의 li 4개 생성 후 content내용넣기 + 순번 정하기 
+        ol>li*4{content$} -->
+    <ol>
+        <li>content1</li>
+        <li>content2</li>
+        <li>content3</li>
+        <li>content4</li>
+    </ol>
+
+    <!-- ol태그 안의 li 4개 생성 후 li와 같은 레벨로 ul 2개 생성 
+        ol>li*4+ul*2 -->
+    <ol>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <ul></ul>
+        <ul></ul>
+    </ol>
+    
+    <!-- ol태그 안에 li 2개 생성 후 li와 같은 레벨의 ul태그 2개 생성, 
+        그 안에 li 3개씩 생성(text순번추가)
+        ol>li*2+ul*2>li*3{text$} -->
+    <ol>
+        <li></li>
+        <li></li>
+        <ul>
+            <li>text1</li>
+            <li>text2</li>
+            <li>text3</li>
+        </ul>
+        <ul>
+            <li>text1</li>
+            <li>text2</li>
+            <li>text3</li>
+        </ul>
+    </ol>
+
+    <!-- ul>li+ul>li*4{text$} -->
+
+    
+
+
+
+
+</body>
+</html>
