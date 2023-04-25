@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- form - fileupload 
+    본인의 form태그 안에 file 타입이 있다면 method는 post로 지정해야함. (개인정보가 저장되어있을 수 있기 때문(?))-->
+    <!-- multiple 속성을 넣지 않으면 단일 파일만 선택 가능. multiple 속성 추가 시 여러개의 파일 첨부 가능. --> 
+    <form action="test.jsp" method="post" enctype="multipart/form-data">
+        FILE1 : <input type="file" name="upload1"><br>
+        FILE1 : <input type="file" name="upload2" multiple><br>
+        <input type="submit" value="upload">
+    </form>
+</body>
+</html>
