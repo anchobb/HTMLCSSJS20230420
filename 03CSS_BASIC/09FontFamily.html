@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 네이버폰트 -->
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/NanumHaNaSonGeurSsi.css" rel="stylesheet">
+
+    <!-- 구글폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+
+    <style>
+        @font-face{
+            font-family: "songmyung";
+            src:url('./font/SongMyung-Regular.ttf');
+            font-weight: 100;
+            font-style: normal;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- 외부폰트 사용하기 (CDN) -->
+    <div style="font-family: 'NanumHaNaSonGeurSsi';">HELLO WORLD</div>
+    <div style="font-family: 'Black Han Sans', sans-serif;">HELLO WORLD</div>
+
+    <!-- 외부폰트 사용하기(Download) -->
+    <div style="font-family: songmyung;">HELLO WORLD</div>
+    <hr />
+    <!-- 글꼴을 하나 이상 넣으면,, 첫번째 스타일이 적용되지 않을 때 다음 스타일이 적용될 수 있게 함 (일부브라우저가 해당 글꼴을 허용하지 않는 경우!) -->
+    <div style="font-family: '돋움','궁서체', sans-serif;">HELLOWORLD</div>
+    <div style="font-family: '궁서체','돋움', sans-serif;">HELLOWORLD</div>
+
+
+</body>
+
+</html>
