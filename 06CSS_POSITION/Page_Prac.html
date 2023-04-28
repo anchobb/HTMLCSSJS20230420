@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{}
+        body{}
+        body>header{}
+
+        .Wm_quickmenu{
+            list-style: none;
+            display: flex;
+            justify-content: right;
+        }
+
+        .Wm_quickmenu>li{
+            display: block;
+            width: 120px;
+        }
+        .Wm_quickmenu>li>a{
+            text-decoration: none;
+            color: black;
+        }
+        .Wm_logo{
+            display: flex;
+            width: 200px;
+            height: 100px;
+
+        }
+        .Wm_search{
+            position:relative;
+            width: 300px;
+            height: 30px;
+        }   
+        .Wm_search>input{
+            position: absolute;
+            width: 290px;
+            height: 25px;
+        }    
+        .Wm_search>img{
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <ul class="Wm_quickmenu">
+                <li text><a href="" style="color: green; font-weight: 700;">멤버십가입</a></li>
+                <li><a href="">ENGLISH</a></li>
+            </ul>
+        </div>
+        <span class="Wm_logo">
+            <img src="./image/로고.png" alt="">
+            
+        </span>
+        <span class="Wm_search">
+            <input type="text">
+            <img src="./image/search.svg" alt="alt">
+        </span>
+        <div class="Wm_log">
+            <img src="" alt="">
+            <div>ㅇㅇ님 환영합니다~</div>
+            <a href="" id="Wm_log_btn">LOGOUT</a>
+        </div>
+    </header>
+</body>
+</html>
