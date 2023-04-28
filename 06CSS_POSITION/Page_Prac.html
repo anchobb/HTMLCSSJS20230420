@@ -7,40 +7,54 @@
     <title>Document</title>
     <style>
         *{}
-        body{}
-        body>header{}
+        body{
+        }
+        body>header{
+            border: 1px solid black;
+            /* padding: 0px; */
+        }
 
         .Wm_quickmenu{
             list-style: none;
-            display: flex;
-            justify-content: right;
+            padding: 0px;
+            display: inline;
+            margin-left: 80%;
+            border: 1px solid black;
+            text-align: center;
         }
 
         .Wm_quickmenu>li{
-            display: block;
-            width: 120px;
+            display: inline-block;
+            width: 100px;
         }
         .Wm_quickmenu>li>a{
+            display: block;
             text-decoration: none;
             color: black;
+            /* border: 1px solid black; */
         }
-        .Wm_logo{
-            display: flex;
+        #logo{
+            display: relative;
             width: 200px;
             height: 100px;
 
         }
-        .Wm_search{
+        .search{
             position:relative;
             width: 300px;
             height: 30px;
+            left: 100px;
+            bottom: 40px;
         }   
-        .Wm_search>input{
+        .search>input{
             position: absolute;
+            top: 0;
+            left: 0;
             width: 290px;
             height: 25px;
+            padding-left: 32px; 
         }    
-        .Wm_search>img{
+        .search>img{
             position: absolute;
             width: 30px;
             height: 30px;
@@ -59,19 +73,17 @@
                 <li><a href="">ENGLISH</a></li>
             </ul>
         </div>
-        <span class="Wm_logo">
-            <img src="./image/로고.png" alt="">
-            
-        </span>
-        <span class="Wm_search">
-            <input type="text">
-            <img src="./image/search.svg" alt="alt">
-        </span>
-        <div class="Wm_log">
-            <img src="" alt="">
-            <div>ㅇㅇ님 환영합니다~</div>
-            <a href="" id="Wm_log_btn">LOGOUT</a>
-        </div>
+        <div class="Wm_header">
+            <img id="logo" src="./image/로고.png" alt="">
+            <span class="search">
+                <input type="text">
+                <img src="./image/search.svg" alt="alt">
+            </span>
+            <span class="log">
+                <img src="" alt="">
+                <span>ㅇㅇ님 환영합니다~</span>
+                <a href="" id="Wm_log_btn">LOGOUT</a>
+            </span>
     </header>
 </body>
 </html>
