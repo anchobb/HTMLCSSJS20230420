@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 200px;
+            height: 200px;
+            perspective: 1000px;
+            /* border: 1px solid; */
+            /* 가운데 맞춤! position, 방향, margin 확인~ */
+            position: fixed;
+            left: 0px; right: 0px; top: 0px; bottom: 0px;
+            margin: auto;
+            /* left : 45%;
+            transform: translateX(-50%);
+            top: 50%;
+            transform: translateY(-50%); */
+        }
+        .container>.card{
+            width: 200px;
+            height: 200px;
+            position: relative;
+            /* 3D를 사용할 수 있게 하는 - transform-style : preserve-3d */
+            transform-style: preserve-3d;
+            transition: 1s;
+            
+        }
+
+
+        .container>.card>.front,
+        .container>.card>.back{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            /* rotateY가 180deg일 때 뒷면이 보여지지 않도록 숨김 처리 */
+            backface-visibility: hidden;
+            border-radius: 50%;
+            box-shadow: 15px 15px 15px;
+        }
+        .container>.card>.front{
+            /* background-color: bisque; */
+            background-image: url(https://image.ohou.se/i/bucketplace-v2-development/uploads/productions/167357680406573415.jpg?gif=1&w=640&h=640&c=c&webp=1);
+            background-size: contain;
+            background-repeat: no-repeat;
+            opacity: 0.8;
+        }
+        .container>.card>.back{
+            background-color: cadetblue;
+            /* back은 기본적으로 hidden처리 */
+            transform: rotateY(180deg);
+            font-size: 20px;
+            text-align: center;
+            line-height: 100px;
+            font-weight: 700;
+        }
+        .container:hover .card{
+            /* 마우스를 올렸을 때 front : 180deg, back : 360deg가 됨 */
+            transform: rotateY(180deg);
+        }
+        </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="front"></div>
+            <div class="back">
+                ★조명할인EVENT★
+                오늘부터 일주일간
+            </div>
+        </div>
+    </div>
+</body>
+</html>

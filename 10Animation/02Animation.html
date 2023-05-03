@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .animation--test{
+            width: 400px;
+            margin: 100px auto;
+        }
+        .animation--test>div{
+            width: 400px;
+            height: 40px;
+            background-color: orange;
+            color: white;
+            text-align: center;
+            line-height: 40px;
+            border: 1px solid purple;
+            position: relative;
+
+        }
+        .animation--test>.d1{
+            position: absolute;
+            top: 40px;
+            animation-name: moving1;
+            animation-duration: 3s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+        .animation--test>.d2{
+            position: absolute;
+            top: 80px; 
+            animation-name: moving2;
+            animation-duration: 3s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+        .animation--test>.d3{
+            position: absolute;
+            top: 120px;
+            animation-name: moving3;
+            animation-duration: 3s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes moving1 {
+            from{margin-left: 100%;}
+            to{margin-left: 0%;}
+        }
+
+        @keyframes moving2 {
+            from{margin-top: 100%;}
+            to{margin-top: 0%;}
+        }
+
+        @keyframes moving3 {
+            from{margin-left: 100%; margin-top: 100%;}
+            to{margin-left: 0%; margin-top: 0%;}
+        }
+
+    </style>
+</head>
+<body>
+    <div class="animation--test">
+        <div class="d1">HELLOWORLD1</div>
+        <div class="d2">HELLOWORLD2</div>
+        <div class="d3">HELLOWORLD3</div>
+    </div>
+</body>
+</html>
